@@ -38,5 +38,6 @@ Issues
 * The zone form has a minor issue where the javascript to disable the non selected doesn't disable zipcodes. This causes a cosmetic error where phantom "zipcodes" may be displayed, but don't worry! The only data associated with your zone is that inside the form that is supposed to be displayed. For example, if you select 'country based' both country and zipcode forms are displayed. But only the country counts, even though it may display some zipcodes in the second form. Likewise, when you select zipcode based, the form doesn't change... but the zipcodes save, whereas the form that didn't disappear doesn't matter!
 
 Copyright (c) 2011 Cameron Carroll, released under the New BSD License
+
 Copyright (c) 2011 PrintBear, LLC. released under the New BSD License
 
