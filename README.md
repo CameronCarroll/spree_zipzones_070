@@ -13,20 +13,20 @@ Start by adding the appropriate git reference to your Gemfile.
 For Spree 0.70.0 and above:
 ___________________________
 
-gem 'spree_zipzones_070', :git => 'git://github.com/sanarothe/spree_zipzones_070.git'
-$ bundle install
-$ rake railties:install:migrations
-$ rake db:migrate
-$ ruby script/rails s
+* gem 'spree_zipzones_070', :git => 'git://github.com/sanarothe/spree_zipzones_070.git'
+* $ bundle install
+* $ rake railties:install:migrations
+* $ rake db:migrate
+* $ ruby script/rails s
 
 For Spree 0.60.0 and below, use Andrewmp1's [spree_zip_zones](https://github.com/Andrewmp1/spree-zip-zones):
 ____________________________________________________________________________________________________________
 
-git://github.com/Andrewmp1/spree-zip-zones.git
-$ bundle install
-$ bundle exec rake spree_zipcode_zones:install
-$ bundle exec rake db:migrate
-$ ruby script/rails s
+* git://github.com/Andrewmp1/spree-zip-zones.git
+* $ bundle install
+* bundle exec rake spree_zipcode_zones:install
+* bundle exec rake db:migrate
+* ruby script/rails s
 
 
 You should be all set! Open up admin/configurations menu and verify that 'zipcodes' appears at the bottom of the list and you're ready to start adding zipcode zones!
