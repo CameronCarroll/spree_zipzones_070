@@ -1,0 +1,31 @@
+<%= render :partial => 'admin/shared/configuration_menu' %>
+
+<h1><%= t('zipcodes') %></h1>
+
+<table class="index">
+  <thead>
+    <tr>
+      <th><%= t('name') %></th>
+      <th><%= t('action') %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @zipcodes.each do |zipcode| %>
+      <tr>
+        <td><%= zipcode.name %></td>
+        <td class="actions">
+          <%= link_to_with_icon 'edit', t('edit'), edit_admin_zipcode_url(zipcode) %>
+          &nbsp;
+          <%= link_to_with_icon 'delete', t('delete'), object_url(zipcode), :method => :delete %>
+        </td>
+      </tr>
+    <% end %>
+    <% if @zipcodes.empty? %>
+      <tr><td colspan="3"><%= t('none') %></td></tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p>
+  <%= button_link_to t('new_zipcode'), new_admin_zipcode_url, :icon => 'add' %>
+</p>

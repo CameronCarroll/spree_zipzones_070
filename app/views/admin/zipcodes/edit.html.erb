@@ -1,0 +1,10 @@
+<%= render :partial => 'admin/shared/configuration_menu' %>
+
+<h1><%= t(:editing_zipcode) %></h1>
+
+<%= render 'shared/error_messages', :target => @zipcode %>
+
+<%= form_for [:admin, @state, @zipcode] do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f } %>
+  <%= render :partial => 'admin/shared/edit_resource_links' %>
+<% end %>
