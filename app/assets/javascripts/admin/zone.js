@@ -10,8 +10,8 @@ $(function() {
   }
   $('#country_based').click(function() { show_country();} );
   $('#state_based').click(function() { show_state();} );
-  $('#zipcode_based').click(function() { show_zipcode();} );
   $('#zone_based').click(function() { show_zone();} );
+  $('#zipcode_based').click(function() { show_zipcode();} );
 })
 
 var show_country = function() {
@@ -53,7 +53,7 @@ var show_zipcode = function() {
   $('#country_members :input').each(function() { $(this).prop("disabled", true); })
   $('#country_members').hide();
   $('#zone_members :input').each(function() { $(this).prop("disabled", true); })
-  $('#zone_members').show();
+  $('#zone_members').hide();
   $('#zipcode_members :input').each(function() { $(this).prop("disabled", false); })
-  $('#zipcode_members').hide();
+  $('#zipcode_members').show();
 };
