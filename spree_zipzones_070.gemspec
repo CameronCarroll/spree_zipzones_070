@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.description = 'Adds zipcode functionality equivalent to that of states.'
   s.required_ruby_version = '>= 1.8.7'
 
-  # s.author            = 'David Heinemeier Hansson'
-  # s.email             = 'david@loudthinking.com'
+   s.author            = 'Cameron Carroll'
+   s.email             = 'ckcarroll4@gmail.com'
   # s.homepage          = 'http://www.rubyonrails.org'
   # s.rubyforge_project = 'actionmailer'
 
