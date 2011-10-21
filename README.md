@@ -35,7 +35,9 @@ You should be all set! Open up admin/configurations menu and verify that 'zipcod
 Issues
 -------
 
-* The javascript file for zone form may not be included in the asset pipeline correctly. To fix this, simply copy zone.js from app/assets/javascripts/admin/ into the same path in your own application! (Otherwise the forms won't be hidden correctly.)
+* The javascript file for zone form may not be included in the asset pipeline correctly. To fix this, simply copy zone.js from app/assets/javascripts/admin/ into the same path in your own application! (Otherwise the forms won't be hidden correctly.)gi
+
+
 Copyright (c) 2011 Cameron Carroll, released under the New BSD License
 
 Copyright (c) 2011 PrintBear, LLC. released under the New BSD License
