@@ -1,5 +1,6 @@
-# https://github.com/lazyatom/engines/blob/master/lib/engines.rb
-# from rails engines
+module MirrorHelper
+  # https://github.com/lazyatom/engines/blob/master/lib/engines.rb
+  # from rails engines
   def mirror_files_from(source, destination)
       #puts "Origin: [" + source + "]"
       #puts "Destination: [" + destination + "]"
@@ -58,3 +59,4 @@
         end
       end  
     end   
+  end
