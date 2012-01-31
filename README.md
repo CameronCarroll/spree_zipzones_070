@@ -1,4 +1,4 @@
-SpreeZipzones070
+SpreeZipzones070 (0.70.0.rc2)
 ================
 
 (For the Spree eCommerce framework)
@@ -46,7 +46,7 @@ Issues
 * Deface doesn't seem to work with 1.9.3, so until that's fixed this extension is for 1.9.2 or lower.
 
 
-Copyright (c) 2011 Cameron Carroll, released under the New BSD License
+Copyright (c) 2011 Cameron Carroll, released under the WTFPL. (See LICENSE)
 
 Copyright (c) 2011 PrintBear, LLC. released under the New BSD License
 
