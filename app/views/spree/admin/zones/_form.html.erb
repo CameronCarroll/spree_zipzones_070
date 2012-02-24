@@ -8,6 +8,11 @@
   <%= zone_form.text_field :description %>
 <% end %>
 
+<p data-hook="default">
+  <td><%= t(:default_tax_zone) %></td>
+  <td><%= zone_form.check_box :default_tax %></td>
+</p>
+
 <p data-hook="type">
   <%= label_tag nil, t(:type) %><br />
   <label class="sub">
@@ -22,13 +27,8 @@
     <%= zone_form.radio_button("kind", 'zipcode', {:id => 'zipcode_based'}) %>
     <%= t(:zipcode_based) %>
   </label> &nbsp;
-  <label class="sub">
-    <%= zone_form.radio_button('kind', 'zone', {:id => 'zone_based'}) %>
-    <%= t(:zone_based) %>
-  </label>
 </p>
 
 <%= render 'member_type', :type => 'country', :zone_form => zone_form %>
 <%= render 'member_type', :type => 'state', :zone_form => zone_form %>
 <%= render 'member_type', :type => 'zipcode', :zone_form => zone_form %>
-<%= render 'member_type', :type => 'zone', :zone_form => zone_form %>

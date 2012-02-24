@@ -1,3 +1,10 @@
+UPDATED:
+
+Modified to work with Spree 1.0.0
+
+========================================
+
+
 SpreeZipzones070 (0.70.0.rc2)
 ================
 
