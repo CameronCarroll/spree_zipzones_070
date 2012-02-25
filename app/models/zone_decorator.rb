@@ -21,9 +21,9 @@ def include?(address)
   members.any? do |zone_member|
     case zone_member.zoneable_type
     when "Spree::Country"
-      zone_member.zoneable_id == address.country
+      zone_member.zoneable_id == address.country_id
     when "Spree::State"
-      zone_member.zoneable_id == address.state
+      zone_member.zoneable_id == address.state_id
     when "Spree::Zipcode"
       zone_member.zoneable.name == address.zipcode
     else
