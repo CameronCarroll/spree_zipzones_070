@@ -1,0 +1,10 @@
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
+
+<h1><%= t(:editing_zipcode) %></h1>
+
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @zipcode } %>
+
+<%= form_for [:admin, @state, @zipcode] do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f } %>
+  <%= render :partial => 'spree/admin/shared/edit_resource_links' %>
+<% end %>

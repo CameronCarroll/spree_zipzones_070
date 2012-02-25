@@ -1,5 +1,9 @@
-Rails.application.routes.draw do
-  namespace :admin do resources :zipcodes end
+# Rails.application.routes.draw do
 
-  # Add your extension routes here
+Spree::Core::Engine.routes.prepend do
+
+  namespace :admin do 
+    resources :zipcodes
+  end
+
 end
