@@ -1,16 +1,10 @@
-UPDATED:
 
-Modified to work with Spree 1.0.0
-
-========================================
-
-
-SpreeZipzones070 (0.70.0.rc2)
+SpreeZipzones070 (0.1.3)
 ================
 
-(For the Spree eCommerce framework)
+(For the Spree eCommerce framework v1.0.0)
 
-(Last updated against Spree 0.70.0.rc2 on 12/16/2011)
+(Last updated against Spree 1.0.0 on 2/25/2012)
 
 An implementation of spree_zip_zones for 0.70.0+; Based off of Niamtech and Andrewmp1's spree-zip-zones extension.
 WARNING: Does NOT work with Ruby 1.9.3. (This is a Nokogiri / Deface upstream problem.)
@@ -30,7 +24,6 @@ ___________________________
 * $ bundle install
 * $ rake railties:install:migrations
 * $ rake db:migrate
-* $ rake spree_zipzones:copy_assets
 * $ ruby script/rails s
 
 For Spree 0.60.0 and below, use Andrewmp1's [spree_zip_zones](https://github.com/Andrewmp1/spree-zip-zones):
@@ -50,8 +43,11 @@ Issues
 -------
 
 * The asset import for javascript files inside of engine seems to not be working, at least for me. So I made a rake task to manually pull Zone.js from the engine into your app. This is already incorporated into the installation instructions.
-* Deface doesn't seem to work with 1.9.3, so until that's fixed this extension is for 1.9.2 or lower.
+* The above explains why in the admin interface, when adding or editing zones, the zipcode field is always displayed. I'm sorry, I don't have a solution for this and I've spent a lot of time on it.
 
+Contributors:
+--------------
+* Greinacker -- Feb 24, 2012 (Updated to 1.0.0)
 
 Copyright (c) 2011 Cameron Carroll, released under the WTFPL. (See LICENSE)
 

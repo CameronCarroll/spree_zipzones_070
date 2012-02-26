@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_zipzones_070'
-  s.version     = '0.1.2'
+  s.version     = '0.1.3'
   s.summary     = 'Enables zipcode zones.'
   s.description = 'Adds zipcode functionality equivalent to that of states. Used for the Spree eCommerce framework.'
   s.required_ruby_version = '>= 1.8.7'
