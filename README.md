@@ -7,7 +7,6 @@ SpreeZipzones070 (0.1.3)
 (Last updated against Spree 1.0.0 on 2/25/2012)
 
 An implementation of spree_zip_zones for 0.70.0+; Based off of Niamtech and Andrewmp1's spree-zip-zones extension.
-WARNING: Does NOT work with Ruby 1.9.3. (This is a Nokogiri / Deface upstream problem.)
 
 This extension implements the equivalent of a state zone, but for zipcodes. This allows you to create zones based upon zipcode for use in shipping and taxation.
 
